@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My Portfolio </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+         <div class="logo"> NAVEEN V</div>
+          <div>
+            <ul class="nav-links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li><a href="#project"> Project</a></li>
+                <li><a href="#contact"> Contact</a></li>
+            </ul>
+         </div>
+        </nav>
+        <nav id="hamburgur-nav">
+            <div class="logo"> NAVEEN V</div>
+            <div class="hamburgur-menu">
+                <div class="hamburgur-icon" onclick="togglemenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()"> About</a></li>
+                <li><a href="#experience" onclick="togglemenu()"> Experience</a></li>
+                <li><a href="#project" onclick="togglemenu()"> Project</a></li>
+                <li><a href="#contact" onclick="togglemenu()"> Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./Assets/naveen.jpg" />
+            </div>
+            <div class="section-test">
+                <p class="section-test-p1"> Hello I'm</p>
+                <h1 class="title"> NAVEEN </h1>
+                <p class="section-test-p2"> Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" 
+                    onclick="window.open('./Assets/Document_from_Naveen.pdf')"> 
+                    Download CV 
+                    </button>
+                    <button class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"> 
+                    Contact Info
+                   </button>
+                </div>
+                <div id="social-container">
+                    <img src="./Assets/github.png" class="icon"
+                     onclick="location.href='https://github.com/Naveen-9101'"/>
+                    <img src="./Assets/linkedin.png" class="icon"
+                     onclick="location.href='https://www.linkedin.com/in/naveen-v-7210152a1/'"/>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section-test-p2"> Get To Know More</p>
+            <h1 class="title"> About Me</h1>
+            <div class="section-container"></div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assets/experience.png"
+                         class="icon">
+                         <h3> Experience</h3>
+                         <p> Junior <br> Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Assets/education.png"
+                         class="icon">
+                         <h3> Education</h3>
+                         <p> B.E Engineeering <br> PACET</p>
+
+                    </div>
+                </div>
+                <p> Frontend development focuses on building the visual and interactive parts of a website or web application. It involves using HTML, CSS, and JavaScript to design layouts, style content, and add dynamic functionality.
+                    <br> <br>In the upcoming days, I plan to become a full stack developer by mastering both frontend and backend technologies.
+                    <br>
+                   <br>I am currently working with databases such as MySQL to store, manage, and retrieve data efficiently as part of my development projects. 
+                    
+                </p>
+            </div>
+            
+        </section>
+        <section id="experience">
+            <p class="section-test-p2"> Explore My</p>
+            <h1 class="title"> Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> HTML</h3>
+                                    <p> Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p> Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> JavaScript</h3>
+                                    <p> Intermediate</p>
+                                </div>
+                            </article>
+                           
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> React</h3>
+                                    <p> Intermediate</p>
+                                </div>
+                            </article>
+                            
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Database</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>MangoDB</h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>Node.js</h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>Express.js</h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> Git</h3>
+                                    <p> Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="project">
+            <p class="section-test-p2"> Browse My Recent</p>
+            <h1 class="title"> Project</h1>
+            <div class="experience-details-container">
+                <div class="about-containers"></div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/form.png"
+                         height="400" width="800" class="projo">
+                    </div>
+                    <h2 class="experience-sub-title projo-title"> Multi-Step Form</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href='https://github.com/Naveen-9101/multistep-forms'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href='https://naveen-9101.github.io/multistep-forms/'">
+                           Live Demo
+                        </button>
+                    </div>
+                </div>
+                   <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Ecommerce.png"
+                         height="400" width="800" class="projo">
+                    </div>
+                    <h2 class="experience-sub-title projo-title"> eCommerce Website</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href='https://github.com/Naveen-9101/Ecommerce'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href=' https://naveen-9101.github.io/Ecommerce/'">
+                           Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Fitness.png"
+                         height="400" width="800" class="projo">
+                    </div>
+                    <h2 class="experience-sub-title projo-title"> Fitness Tracker App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href='https://github.com/Naveen-9101/Fitness-App'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href=' https://naveen-9101.github.io/Fitness-App/'">
+                           Live Demo
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p class="section-test-p2"> Get in touch</p>
+            <h2 class="title"> Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-in">
+                    <img src="./Assets/email.png"
+                     class=" icon contact-icon email-icon">
+                     <p><a href="mailto:naveen4667033@gmail.com"> naveen4667033@gmail.com</a></p>
+                </div>
+               
+                    <div class="contact-in">
+                        <img src="./Assets/linkedin1.png"
+                         class=" icon contact-icon link-icon">
+                         <p><a href="https://www.linkedin.com/in/naveen-v-7210152a1/"> linkedin</a></p>
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about"> About</a></li>
+                        <li><a href="#experience"> Experience</a></li>
+                        <li><a href="#project"> Project</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="paragraph"> Copyright &#169; 2024 Naveen. All Rights Reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
+    
